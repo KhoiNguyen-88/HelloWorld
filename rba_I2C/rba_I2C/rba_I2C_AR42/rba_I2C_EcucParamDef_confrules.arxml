@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+  <ADMIN-DATA>
+    <DOC-REVISIONS>
+      <DOC-REVISION>
+        <ISSUED-BY>RB</ISSUED-BY>
+      </DOC-REVISION>
+    </DOC-REVISIONS>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>RB</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>RBA</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>rba_I2c</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE>
+                  <SHORT-NAME>EcucModuleDefs</SHORT-NAME>
+                  <ELEMENTS>
+                    <ECUC-MODULE-DEF>
+                      <SHORT-NAME>rba_I2c</SHORT-NAME>
+                      <LONG-NAME>
+                        <L-4 L="EN">MCAL Inter_Integrated_Circuit</L-4>
+                      </LONG-NAME>
+                      <DESC>
+                        <L-2 L="EN">Configuration of the I2C  (Inter-Integrated Circuit) module in MCAL layer.</L-2>
+                      </DESC>
+                      <CATEGORY>VENDOR_SPECIFIC_MODULE_DEFINITION</CATEGORY>
+                      <ADMIN-DATA>
+                        <DOC-REVISIONS>
+                          <DOC-REVISION>
+                            <REVISION-LABEL>0.1.0</REVISION-LABEL>
+                            <ISSUED-BY>RB</ISSUED-BY>
+                            <DATE>2013-01-22</DATE>
+                          </DOC-REVISION>
+                        </DOC-REVISIONS>
+                      </ADMIN-DATA>
+                      <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                      <POST-BUILD-VARIANT-SUPPORT>true</POST-BUILD-VARIANT-SUPPORT>
+                      <REFINED-MODULE-DEF-REF DEST="ECUC-MODULE-DEF">/AUTOSAR/EcucDefs/rba_I2C</REFINED-MODULE-DEF-REF>
+                      <SUPPORTED-CONFIG-VARIANTS>
+                        <SUPPORTED-CONFIG-VARIANT>VARIANT-PRE-COMPILE</SUPPORTED-CONFIG-VARIANT>
+                      </SUPPORTED-CONFIG-VARIANTS>
+                      <CONTAINERS>
+                        <ECUC-PARAM-CONF-CONTAINER-DEF>
+                          <SHORT-NAME>rba_I2c_ConfigSet</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">Configuration data set</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">This is the base container that contains the post-build selectable configuration parameters.</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <SUB-CONTAINERS>
+                            <ECUC-PARAM-CONF-CONTAINER-DEF>
+                              <SHORT-NAME>rba_I2c_IfxHwUnit</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">IFX Hw unit config</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">IFX hardware uint container Configuration is not Mandatory . 
+This container configuration is only for the IFX controller.
+This container select the (IFX) I2C- port multiplexer selection HW-Unit specific parameters.
+Software supporting channels I2C0 and I2C1 channels.
+configure the I2C channel depend the I2C-hardware usage (availability) in the ECU.
+If IFX HW configuration is not present softare will consider the Default setting as I2C port       Multiplexer as -&apos;A&apos;;</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY-INFINITE>true</UPPER-MULTIPLICITY-INFINITE>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <PARAMETERS>
+                                <ECUC-ENUMERATION-PARAM-DEF>
+                                  <SHORT-NAME>rba_I2c_HwModule</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">IFX I2C Hw module</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Hardware Module Configuration is Mandatory for the rba_I2c_IfxHwUnit                              container. I2C- Hardware module selection.( Mandatory parameter )
+IFX-hardware Hint:
+1.(DEV2,DEV3 have the one I2C channel- I2C0)
+2.(DEV4, DEV5 have the Two I2C channel- I2C0 and I2C1)</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <ORIGIN>RB:v0.1.0:2013-02-20</ORIGIN>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>I2C_0</DEFAULT-VALUE>
+                                  <LITERALS>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>I2C_0</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">I2C_0</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB:v4.22.0:2015-06-15</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>I2C_1</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">I2C_1</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB:v4.22.0:2015-06-15</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                  </LITERALS>
+                                </ECUC-ENUMERATION-PARAM-DEF>
+                                <ECUC-ENUMERATION-PARAM-DEF>
+                                  <SHORT-NAME>rba_I2c_PortSelect</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">IFX Port pin selection (I2C Mux)</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Port selection Configuration is for the rba_I2c_IfxHwUnit  container. I2C interface PORT pin Multiplexer Selection of the input pins providing the serial data and clock input signals. 
+Not all enumeration PORT options are available for the all controller See the Ports chapter.
+For the I2C-port selection refer the HW schematic and find the I2C interface port pin.
+IFX- device user Manuel check the I2C-port pin  related the Multiplexer. 
+IFX-Available Multiplexer info(This port info not common for all device variant):
+
+Configuration allowed:
+PORTSELECT_A:
+PORTSELECT_B
+PORTSELECT_C
+PORTSELECT_D
+PORTSELECT_E
+PORTSELECT_F
+PORTSELECT_G
+PORTSELECT_H</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <ORIGIN>RB:0.1.0:2013-02-20</ORIGIN>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>PORTSELECT_A</DEFAULT-VALUE>
+                                  <LITERALS>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>PORTSELECT_A</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">PortSelect_A</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB:v0.1.0:2013-02-20</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>PORTSELECT_B</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">PortSelect_B</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB:v0.1.0:2013-02-20</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>PORTSELECT_C</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">PortSelect_C</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB:v0.1.0:2013-02-20</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>PORTSELECT_D</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">PortSelect_D</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB:v0.1.0:2013-02-20</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>PORTSELECT_E</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">PortSelect_E</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB:v0.1.0:2013-02-20</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>PORTSELECT_F</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">PortSelect_F</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB:v0.1.0:2013-02-20</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>PORTSELECT_G</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">PortSelect_G</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB:v0.1.0:2013-02-20</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>PORTSELECT_H</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">PortSelect_H</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB:v0.1.0:2013-02-20</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                  </LITERALS>
+                                </ECUC-ENUMERATION-PARAM-DEF>
+                              </PARAMETERS>
+                            </ECUC-PARAM-CONF-CONTAINER-DEF>
+                            <ECUC-PARAM-CONF-CONTAINER-DEF>
+                              <SHORT-NAME>rba_I2c_SlaveConfig</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Slave config</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Slave Configuration container configuration is Mandatory in I2C configuration set. I2C interface each slave device for one configuration container. 
+Slave Id name is specified by the containers short name.
+( Mandatory Container )-If configuration is not present (least one slave required)  I2C interface will be disable.
+Configuration hint:
+short name like rba_I2c_SlaveConfig_xxx
+Value:  Depend the hardware container create the multiple container. Short name as like hardware                           number
+Ex for sequence rba_I2c_SequenceConfig_PortExp</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY-INFINITE>true</UPPER-MULTIPLICITY-INFINITE>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <PARAMETERS>
+                                <ECUC-STRING-PARAM-DEF>
+                                  <SHORT-NAME>rba_I2c_SlaveAddress</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Slave address (hex format)</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Slave address parameter Configuration is Mandatory for the rba_I2c_SlaveConfig container. I2C Slave (1-7)7bit Unique ID in hex decimal format. This ID has provided by the I2C-slave hardware manufacture. 0th bit  Read/Write must be Zero
+( Mandatory parameter )
+Configuration allowed:  
+Min value  0x00
+Max value 0xFE
+
+Value:  Ex:  0xA0</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <ORIGIN>RB:0.1.0:2013-01-08</ORIGIN>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                </ECUC-STRING-PARAM-DEF>
+                                <ECUC-ENUMERATION-PARAM-DEF>
+                                  <SHORT-NAME>rba_I2c_SlaveConnModule</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Slave connect to I2C module</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Slave connection module parameter configuration dataset is a  Mandatory for the rba_I2c_SlaveConfig container.. Select the slave interface to I2C hardware module(I2C0 or I2C1).
+
+Configuration allowed:
+I2C_0
+I2C_1
+
+Default_Selection: I2C_0
+
+Value:  I2C0 channel  selection for - I2C_0.</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <ORIGIN>RB:v0.1.0:2013-02-20</ORIGIN>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>I2C_0</DEFAULT-VALUE>
+                                  <LITERALS>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>I2C_0</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">I2C_0</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB:v4.22.0:2015-06-15</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>I2C_1</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">I2C_1</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB:v4.22.0:2015-06-15</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                  </LITERALS>
+                                </ECUC-ENUMERATION-PARAM-DEF>
+                                <ECUC-ENUMERATION-PARAM-DEF>
+                                  <SHORT-NAME>rba_I2c_SlaveSpeed</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Slave baud rate</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Slave speed parameter configuration is not Mandatory for the rba_I2c_SlaveConfig container.. This configuration is Selection of speed range for slave device that communicating with I2C. Normal mode is 100KHz and Fast  mode is 400KHz
+If not configured the parameter, default setting will be taken as Normal speed(100KHz)
+
+Configuration allowed:
+NORMAL_MODE
+FAST_MODE
+
+Value:  NORMAL_MODE</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <ORIGIN>RB:v0.1.0:2013-01-22</ORIGIN>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                  <VALUE-CONFIG-CLASSES>
+                                    <ECUC-VALUE-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-VALUE-CONFIGURATION-CLASS>
+                                  </VALUE-CONFIG-CLASSES>
+                                  <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                  <DEFAULT-VALUE>NORMAL_MODE</DEFAULT-VALUE>
+                                  <LITERALS>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>NORMAL_MODE</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Normal</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB:v0.1.0:2013-01-22</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                    <ECUC-ENUMERATION-LITERAL-DEF>
+                                      <SHORT-NAME>FAST_MODE</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Fast</L-4>
+                                      </LONG-NAME>
+                                      <ORIGIN>RB:v0.1.0:2013-01-22</ORIGIN>
+                                    </ECUC-ENUMERATION-LITERAL-DEF>
+                                  </LITERALS>
+                                </ECUC-ENUMERATION-PARAM-DEF>
+                              </PARAMETERS>
+                              <SUB-CONTAINERS>
+                                <ECUC-PARAM-CONF-CONTAINER-DEF>
+                                  <SHORT-NAME>rba_I2c_SequenceConfig</SHORT-NAME>
+                                  <LONG-NAME>
+                                    <L-4 L="EN">Sequence config</L-4>
+                                  </LONG-NAME>
+                                  <DESC>
+                                    <L-2 L="EN">Sequence configuration container is  dataset is a  Mandatory for the I2C configuration. Sequence configuration container this is connected to I2C slave module. 
+Sequence configuration provide multiple option for the I2C slave-interface.
+Sequence Id name is specified by the containers short name.
+( Mandatory Container )-If not available I2C interface will be disable.
+
+Configuration hint:
+short name like rba_I2c_SequenceConfig_xxx
+
+Value:  Ex for sequence  rba_I2c_SequenceConfig_0</L-2>
+                                  </DESC>
+                                  <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                  <UPPER-MULTIPLICITY-INFINITE>true</UPPER-MULTIPLICITY-INFINITE>
+                                  <MULTIPLICITY-CONFIG-CLASSES>
+                                    <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                    </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  </MULTIPLICITY-CONFIG-CLASSES>
+                                  <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                  <PARAMETERS>
+                                    <ECUC-FUNCTION-NAME-DEF>
+                                      <SHORT-NAME>rba_I2c_SequenceEndNotification</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Sequence end notification</L-4>
+                                      </LONG-NAME>
+                                      <DESC>
+                                        <L-2 L="EN">Sequence End Notification parameter Configuration not Mandatory for the rba_I2c_SequenceConfig  container. This parameter is a reference to a notification function called at the end of the Sequence (call-back function).
+The signature of the function must be void(void).</L-2>
+                                      </DESC>
+                                      <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                      <MULTIPLICITY-CONFIG-CLASSES>
+                                        <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                        </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      </MULTIPLICITY-CONFIG-CLASSES>
+                                      <ORIGIN>RB:3.0.0:2014-06-24</ORIGIN>
+                                      <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                      <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                      <VALUE-CONFIG-CLASSES>
+                                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                                      </VALUE-CONFIG-CLASSES>
+                                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                      <ECUC-FUNCTION-NAME-DEF-VARIANTS>
+                                        <ECUC-FUNCTION-NAME-DEF-CONDITIONAL>
+                                          <DEFAULT-VALUE>NULL_PTR</DEFAULT-VALUE>
+                                        </ECUC-FUNCTION-NAME-DEF-CONDITIONAL>
+                                      </ECUC-FUNCTION-NAME-DEF-VARIANTS>
+                                    </ECUC-FUNCTION-NAME-DEF>
+                                    <ECUC-STRING-PARAM-DEF>
+                                      <SHORT-NAME>rba_I2c_SequenceEndNotificationHeaderName</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Header file name</L-4>
+                                      </LONG-NAME>
+                                      <DESC>
+                                        <L-2 L="EN">Optional reference to a header file, in which the declaration of the configured signal notification function is located.<BR/>
+if declaration is in &quot;Xxx.h&quot; header file, just enter &quot;Xxx&quot;.<BR/>
+If not configured, notification function declaration will be generated in rba_I2C_Prv.h</L-2>
+                                      </DESC>
+                                      <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                      <MULTIPLICITY-CONFIG-CLASSES>
+                                        <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                        </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      </MULTIPLICITY-CONFIG-CLASSES>
+                                      <ORIGIN>RB:v1.37.0:2019-04-12</ORIGIN>
+                                      <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                      <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                      <VALUE-CONFIG-CLASSES>
+                                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                                      </VALUE-CONFIG-CLASSES>
+                                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                    </ECUC-STRING-PARAM-DEF>
+                                    <ECUC-ENUMERATION-PARAM-DEF>
+                                      <SHORT-NAME>rba_I2c_SequenceInterface</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Sequence interface type</L-4>
+                                      </LONG-NAME>
+                                      <DESC>
+                                        <L-2 L="EN">Sequence interface parameter Configuration is  Mandatory for the rba_I2c_SequenceConfig  container.This Sequence interface method select he interface type of slave.
+
+Configuration allowed:
+RBA_I2C_SEQ_TRANSMIT
+RBA_I2C_SEQ_RECEIVE
+RBA_I2C_SEQ_TRANSMIT_RECEIVE
+Value: for transmit RBA_I2C_SEQ_TRANSMIT</L-2>
+                                      </DESC>
+                                      <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                      <ORIGIN>RB:v0.1.0:2013-01-22</ORIGIN>
+                                      <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                      <VALUE-CONFIG-CLASSES>
+                                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                                      </VALUE-CONFIG-CLASSES>
+                                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                      <DEFAULT-VALUE>RBA_I2C_SEQ_TRANSMIT</DEFAULT-VALUE>
+                                      <LITERALS>
+                                        <ECUC-ENUMERATION-LITERAL-DEF>
+                                          <SHORT-NAME>RBA_I2C_SEQ_TRANSMIT</SHORT-NAME>
+                                          <LONG-NAME>
+                                            <L-4 L="EN">TRANSMIT</L-4>
+                                          </LONG-NAME>
+                                          <ORIGIN>RB:v0.1.0:2013-01-22</ORIGIN>
+                                        </ECUC-ENUMERATION-LITERAL-DEF>
+                                        <ECUC-ENUMERATION-LITERAL-DEF>
+                                          <SHORT-NAME>RBA_I2C_SEQ_RECEIVE</SHORT-NAME>
+                                          <LONG-NAME>
+                                            <L-4 L="EN">RECEIVE</L-4>
+                                          </LONG-NAME>
+                                          <ORIGIN>RB:v0.1.0:2013-01-22</ORIGIN>
+                                        </ECUC-ENUMERATION-LITERAL-DEF>
+                                        <ECUC-ENUMERATION-LITERAL-DEF>
+                                          <SHORT-NAME>RBA_I2C_SEQ_TRANSMIT_RECEIVE</SHORT-NAME>
+                                          <LONG-NAME>
+                                            <L-4 L="EN">TRANSMIT &amp; RECEIVE</L-4>
+                                          </LONG-NAME>
+                                          <ORIGIN>RB:v0.1.0:2013-01-22</ORIGIN>
+                                        </ECUC-ENUMERATION-LITERAL-DEF>
+                                      </LITERALS>
+                                    </ECUC-ENUMERATION-PARAM-DEF>
+                                    <ECUC-ENUMERATION-PARAM-DEF>
+                                      <SHORT-NAME>rba_I2c_SequencePriority</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Sequence priority</L-4>
+                                      </LONG-NAME>
+                                      <DESC>
+                                        <L-2 L="EN">Sequence Priority parameter Configuration not   Mandatory for the rba_I2c_SequenceConfig  container.This configuration parameter decide the Sequence Priority setting(High Priority or Low Priority ).
+IF configuration is not present software will consider Default value as Low Priority.
+
+Configuration allowed:
+RBA_I2C_SEQ_HIGH_PRIORITY
+RBA_I2C_SEQ_LOW_PRIORITY
+Value: low priority configuration for RBA_I2C_SEQ_HIGH_PRIORITY</L-2>
+                                      </DESC>
+                                      <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                      <MULTIPLICITY-CONFIG-CLASSES>
+                                        <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                        </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                      </MULTIPLICITY-CONFIG-CLASSES>
+                                      <ORIGIN>RB:v0.1.0:2013-01-22</ORIGIN>
+                                      <POST-BUILD-VARIANT-MULTIPLICITY>true</POST-BUILD-VARIANT-MULTIPLICITY>
+                                      <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                      <VALUE-CONFIG-CLASSES>
+                                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                                      </VALUE-CONFIG-CLASSES>
+                                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                      <DEFAULT-VALUE>RBA_I2C_SEQ_LOW_PRIORITY</DEFAULT-VALUE>
+                                      <LITERALS>
+                                        <ECUC-ENUMERATION-LITERAL-DEF>
+                                          <SHORT-NAME>RBA_I2C_SEQ_HIGH_PRIORITY</SHORT-NAME>
+                                          <LONG-NAME>
+                                            <L-4 L="EN">HIGH_PRIORITY</L-4>
+                                          </LONG-NAME>
+                                          <ORIGIN>RB:v0.1.0:2013-01-22</ORIGIN>
+                                        </ECUC-ENUMERATION-LITERAL-DEF>
+                                        <ECUC-ENUMERATION-LITERAL-DEF>
+                                          <SHORT-NAME>RBA_I2C_SEQ_LOW_PRIORITY</SHORT-NAME>
+                                          <LONG-NAME>
+                                            <L-4 L="EN">LOW_PRIORITY</L-4>
+                                          </LONG-NAME>
+                                          <ORIGIN>RB:v0.1.0:2013-01-22</ORIGIN>
+                                        </ECUC-ENUMERATION-LITERAL-DEF>
+                                      </LITERALS>
+                                    </ECUC-ENUMERATION-PARAM-DEF>
+                                    <ECUC-INTEGER-PARAM-DEF>
+                                      <SHORT-NAME>rba_I2c_SequenceRxLength</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Sequence receive length</L-4>
+                                      </LONG-NAME>
+                                      <DESC>
+                                        <L-2 L="EN">Receive length parameter is a Mandatory for the rba_I2c_SequenceConfig  container. This configuration is decide the 
+Sequence Receive length.
+
+for the receive sequence configuration  Receive length should be &apos;1&apos; - &apos;32&apos;
+
+Value: Ex:length &apos;5&apos;</L-2>
+                                      </DESC>
+                                      <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                      <ORIGIN>RB:0.3.0:2012-07-27</ORIGIN>
+                                      <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                      <VALUE-CONFIG-CLASSES>
+                                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                                      </VALUE-CONFIG-CLASSES>
+                                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                      <DEFAULT-VALUE>0</DEFAULT-VALUE>
+                                      <MAX>32</MAX>
+                                      <MIN>0</MIN>
+                                    </ECUC-INTEGER-PARAM-DEF>
+                                    <ECUC-INTEGER-PARAM-DEF>
+                                      <SHORT-NAME>rba_I2c_SequenceTxLength</SHORT-NAME>
+                                      <LONG-NAME>
+                                        <L-4 L="EN">Sequence transmit length</L-4>
+                                      </LONG-NAME>
+                                      <DESC>
+                                        <L-2 L="EN">Transmit length paramenr is Mandatory configset for the rba_I2c_SequenceConfig  container. This configuration is decide the 
+Sequence Transmit length.
+
+for the transmit sequence configuration Transmit length should be &apos;1&apos; - &apos;32&apos; 
+
+Value: Ex:length &apos;5&apos;</L-2>
+                                      </DESC>
+                                      <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                                      <ORIGIN>RB:0.3.0:2012-07-27</ORIGIN>
+                                      <POST-BUILD-VARIANT-VALUE>true</POST-BUILD-VARIANT-VALUE>
+                                      <VALUE-CONFIG-CLASSES>
+                                        <ECUC-VALUE-CONFIGURATION-CLASS>
+                                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                        </ECUC-VALUE-CONFIGURATION-CLASS>
+                                      </VALUE-CONFIG-CLASSES>
+                                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                                      <DEFAULT-VALUE>0</DEFAULT-VALUE>
+                                      <MAX>32</MAX>
+                                      <MIN>0</MIN>
+                                    </ECUC-INTEGER-PARAM-DEF>
+                                  </PARAMETERS>
+                                </ECUC-PARAM-CONF-CONTAINER-DEF>
+                              </SUB-CONTAINERS>
+                            </ECUC-PARAM-CONF-CONTAINER-DEF>
+                          </SUB-CONTAINERS>
+                        </ECUC-PARAM-CONF-CONTAINER-DEF>
+                        <ECUC-PARAM-CONF-CONTAINER-DEF>
+                          <SHORT-NAME>rba_I2c_General</SHORT-NAME>
+                          <LONG-NAME>
+                            <L-4 L="EN">General setting</L-4>
+                          </LONG-NAME>
+                          <DESC>
+                            <L-2 L="EN">General setting container is not Mandatory configuration set for I2C configuration. General setting for the I2C module. ( Mandatory Container )-If not available I2C interface will be disable.
+
+Configuration hint:
+short name like rba_I2c_General</L-2>
+                          </DESC>
+                          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                          <MULTIPLICITY-CONFIG-CLASSES>
+                            <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                              <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                            </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                          </MULTIPLICITY-CONFIG-CLASSES>
+                          <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                          <PARAMETERS>
+                            <ECUC-BOOLEAN-PARAM-DEF>
+                              <SHORT-NAME>rba_I2c_DevErrorDetect</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Development error detection</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Device error detection parameter is not Mandatory for rba_I2c_General container. This configuration will help to select the Switches the Development Error Detection and Notification ON or OFF.
+
+Configuration allowed:
+true: Enabled. 
+false: Disabled.
+Value: 
+Ex:DET enable true</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB:0.1.0:2012-10-19</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <DEFAULT-VALUE>true</DEFAULT-VALUE>
+                            </ECUC-BOOLEAN-PARAM-DEF>
+                            <ECUC-BOOLEAN-PARAM-DEF>
+                              <SHORT-NAME>rba_I2c_VersionInfoApi</SHORT-NAME>
+                              <LONG-NAME>
+                                <L-4 L="EN">Enable rba_I2c_GetVersionInfo</L-4>
+                              </LONG-NAME>
+                              <DESC>
+                                <L-2 L="EN">Get Version info Api parameter is not Mandatory for rba_I2c_General container. This configuration will help to select the Adds / removes the service GetVersionInfo from the code. 
+
+Configuration allowed:
+true: Enabled
+false: Disabled.
+Value: 
+Ex:Getversion support  enable true</L-2>
+                              </DESC>
+                              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                              <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                              <MULTIPLICITY-CONFIG-CLASSES>
+                                <ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-MULTIPLICITY-CONFIGURATION-CLASS>
+                              </MULTIPLICITY-CONFIG-CLASSES>
+                              <ORIGIN>RB:0.1.0:2012-10-19</ORIGIN>
+                              <POST-BUILD-VARIANT-MULTIPLICITY>false</POST-BUILD-VARIANT-MULTIPLICITY>
+                              <POST-BUILD-VARIANT-VALUE>false</POST-BUILD-VARIANT-VALUE>
+                              <VALUE-CONFIG-CLASSES>
+                                <ECUC-VALUE-CONFIGURATION-CLASS>
+                                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                                </ECUC-VALUE-CONFIGURATION-CLASS>
+                              </VALUE-CONFIG-CLASSES>
+                              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                              <DEFAULT-VALUE>true</DEFAULT-VALUE>
+                            </ECUC-BOOLEAN-PARAM-DEF>
+                          </PARAMETERS>
+                        </ECUC-PARAM-CONF-CONTAINER-DEF>
+                      </CONTAINERS>
+                    </ECUC-MODULE-DEF>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

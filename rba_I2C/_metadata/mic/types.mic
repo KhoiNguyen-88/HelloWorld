@@ -1,0 +1,6 @@
+[common]
+domain = CUBAS
+
+[item]
+class = STCOMP
+

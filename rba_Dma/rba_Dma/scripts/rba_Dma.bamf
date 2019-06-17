@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BUILD-ACTION-MANIFEST xsi:schemaLocation="http://bosch.com/schema/buildActionManifest/r1.0 BuildActionManifest_1-0-2.xsd" xmlns="http://bosch.com/schema/buildActionManifest/r1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SHORT-NAME>RB_Manifest</SHORT-NAME>
+  <BUILD-ACTIONS>
+    <BUILD-ACTION>
+      <SHORT-NAME>rba_Dma_Generate</SHORT-NAME>
+      <CATEGORY>GENERATOR</CATEGORY>
+      <INVOCATION>
+        <SDGS>
+          <SDG>
+            <SD GID="STEP_NAME">Generate</SD>
+            <SD GID="MODULE_NAME">rba_Dma</SD>
+            <SD GID="SUPPLIER">RBA-BSW</SD>
+            <SD GID="ACTION_ATTRIBUTE_singleExecutable">true</SD>
+            <SD GID="INPUT_VALIDATION1">true</SD>
+            <SD GID="INPUT_VALIDATION2">true</SD>
+            <SD GID="INPUT_VALIDATION4">true</SD>
+          </SDG>
+        </SDGS>
+      </INVOCATION>
+      <CREATED-DATAS>
+        <BUILD-ACTION-IO-ELEMENT>
+          <CATEGORY>ARTIFACT</CATEGORY>
+          <SDGS>
+            <SDG>
+              <SD GID="ROLE_PROVIDER_TYPE">MDF</SD>
+              <SD GID="USED_ACTION_ROLE">DEFAULT_OUT</SD>
+            </SDG>
+          </SDGS>
+          <ENGINEERING-OBJECTS>
+            <BUILD-ENGINEERING-OBJECT>
+              <SHORT-LABEL>rba_Dma_PBcfg</SHORT-LABEL>
+              <CATEGORY>PJTSRC</CATEGORY>
+              <DOMAIN>CUBAS</DOMAIN>
+              <FILE-TYPE>c</FILE-TYPE>
+            </BUILD-ENGINEERING-OBJECT>
+          </ENGINEERING-OBJECTS>
+        </BUILD-ACTION-IO-ELEMENT>
+        <BUILD-ACTION-IO-ELEMENT>
+          <CATEGORY>ARTIFACT</CATEGORY>
+          <SDGS>
+            <SDG>
+              <SD GID="ROLE_PROVIDER_TYPE">MDF</SD>
+              <SD GID="USED_ACTION_ROLE">DEFAULT_OUT</SD>
+            </SDG>
+          </SDGS>
+          <ENGINEERING-OBJECTS>
+            <BUILD-ENGINEERING-OBJECT>
+              <SHORT-LABEL>rba_Dma_PBcfg</SHORT-LABEL>
+              <CATEGORY>PJTHDR</CATEGORY>
+              <DOMAIN>CUBAS</DOMAIN>
+              <FILE-TYPE>h</FILE-TYPE>
+            </BUILD-ENGINEERING-OBJECT>
+          </ENGINEERING-OBJECTS>
+        </BUILD-ACTION-IO-ELEMENT>
+      </CREATED-DATAS>
+      <INPUT-DATAS>
+        <BUILD-ACTION-IO-ELEMENT>
+          <CATEGORY>ARTIFACT</CATEGORY>
+          <SDGS>
+            <SDG>
+              <SD GID="USED_ACTION_ROLE">PROCESSOR</SD>
+            </SDG>
+          </SDGS>
+          <ENGINEERING-OBJECTS>
+            <BUILD-ENGINEERING-OBJECT>
+              <SHORT-LABEL>rba_Dma_EcucProc</SHORT-LABEL>
+              <CATEGORY>ECUCPROC</CATEGORY>
+              <DOMAIN>CUBAS</DOMAIN>
+              <FILE-TYPE>pm</FILE-TYPE>
+            </BUILD-ENGINEERING-OBJECT>
+          </ENGINEERING-OBJECTS>
+        </BUILD-ACTION-IO-ELEMENT>
+        <BUILD-ACTION-IO-ELEMENT>
+          <CATEGORY>AR_OBJECT</CATEGORY>
+          <ECUC-DEFINITION-REF DEST="ECUC-DEFINITION-ELEMENT">/RB/RBA/rba_Dma/EcucModuleDefs/rba_Dma</ECUC-DEFINITION-REF>
+        </BUILD-ACTION-IO-ELEMENT>
+        <BUILD-ACTION-IO-ELEMENT>
+          <CATEGORY>AR_OBJECT</CATEGORY>
+          <ECUC-DEFINITION-REF DEST="ECUC-DEFINITION-ELEMENT">/AUTOSAR_Mcu/EcucModuleDefs/Mcu/McuRbCpuInformation</ECUC-DEFINITION-REF>
+        </BUILD-ACTION-IO-ELEMENT>
+        <BUILD-ACTION-IO-ELEMENT>
+          <CATEGORY>ARTIFACT</CATEGORY>
+          <SDGS>
+            <SDG>
+              <SD GID="USED_ACTION_ROLE">DEFAULT_IN</SD>
+            </SDG>
+          </SDGS>
+          <ENGINEERING-OBJECTS>
+            <BUILD-ENGINEERING-OBJECT>
+              <SHORT-LABEL>rba_Dma_PBcfg</SHORT-LABEL>
+              <CATEGORY>CONFTPLHDR</CATEGORY>
+              <DOMAIN>CUBAS</DOMAIN>
+              <FILE-TYPE>ht</FILE-TYPE>
+            </BUILD-ENGINEERING-OBJECT>
+          </ENGINEERING-OBJECTS>
+        </BUILD-ACTION-IO-ELEMENT>
+        <BUILD-ACTION-IO-ELEMENT>
+          <CATEGORY>ARTIFACT</CATEGORY>
+          <SDGS>
+            <SDG>
+              <SD GID="USED_ACTION_ROLE">DEFAULT_IN</SD>
+            </SDG>
+          </SDGS>
+          <ENGINEERING-OBJECTS>
+            <BUILD-ENGINEERING-OBJECT>
+              <SHORT-LABEL>rba_Dma_PBcfg</SHORT-LABEL>
+              <CATEGORY>CONFTPLSRC</CATEGORY>
+              <DOMAIN>CUBAS</DOMAIN>
+              <FILE-TYPE>ct</FILE-TYPE>
+            </BUILD-ENGINEERING-OBJECT>
+          </ENGINEERING-OBJECTS>
+        </BUILD-ACTION-IO-ELEMENT>
+        <BUILD-ACTION-IO-ELEMENT>
+          <CATEGORY>ARTIFACT</CATEGORY>
+          <SDGS>
+            <SDG>
+              <SD GID="USED_ACTION_ROLE">PROCESSOR_LIB</SD>
+            </SDG>
+          </SDGS>
+          <ENGINEERING-OBJECTS>
+            <BUILD-ENGINEERING-OBJECT>
+              <SHORT-LABEL>rba_Dma_Jdp</SHORT-LABEL>
+              <CATEGORY>CONFLIB</CATEGORY>
+              <DOMAIN>CUBAS</DOMAIN>
+              <FILE-TYPE>pm</FILE-TYPE>
+            </BUILD-ENGINEERING-OBJECT>
+          </ENGINEERING-OBJECTS>
+        </BUILD-ACTION-IO-ELEMENT>
+        <BUILD-ACTION-IO-ELEMENT>
+          <CATEGORY>ARTIFACT</CATEGORY>
+          <SDGS>
+            <SDG>
+              <SD GID="USED_ACTION_ROLE">PROCESSOR_LIB</SD>
+            </SDG>
+          </SDGS>
+          <ENGINEERING-OBJECTS>
+            <BUILD-ENGINEERING-OBJECT>
+              <SHORT-LABEL>rba_Dma_StDev3_40nm</SHORT-LABEL>
+              <CATEGORY>CONFLIB</CATEGORY>
+              <DOMAIN>CUBAS</DOMAIN>
+              <FILE-TYPE>pm</FILE-TYPE>
+            </BUILD-ENGINEERING-OBJECT>
+          </ENGINEERING-OBJECTS>
+        </BUILD-ACTION-IO-ELEMENT>
+        <BUILD-ACTION-IO-ELEMENT>
+          <CATEGORY>AR_OBJECT</CATEGORY>
+          <ECUC-DEFINITION-REF DEST="ECUC-DEFINITION-ELEMENT">/AUTOSAR_EcuC/EcucModuleDefs/EcuC/EcuCRbSettings/EcuCRbArRelease</ECUC-DEFINITION-REF>
+          <SDGS>
+            <SDG>
+              <SD GID="USED_ACTION_ROLE">/AUTOSAR_EcuC/EcucModuleDefs/EcuC/EcuCRbSettings/EcuCRbArRelease</SD>
+            </SDG>
+          </SDGS>
+        </BUILD-ACTION-IO-ELEMENT>
+      </INPUT-DATAS>
+      <REQUIRED-ENVIRONMENT-REF DEST="BUILD-ACTION-ENVIRONMENT">/RB_Manifest/com_bosch_configfw_bfwaction_processstep</REQUIRED-ENVIRONMENT-REF>
+    </BUILD-ACTION>
+  </BUILD-ACTIONS>
+</BUILD-ACTION-MANIFEST>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-0-3.xsd">
+  <!--File is edited by LEA [21-01-2019, 12:40:53]--><ADMIN-DATA>
+    <LANGUAGE>EN</LANGUAGE>
+    <USED-LANGUAGES>
+            <L-10 L="EN" xml:space="default">EN</L-10>
+        </USED-LANGUAGES>
+    <SDGS>
+      <SDG GID="RBHead">
+        <SD GID="Domain"/>
+        <SD GID="Namespace"/>
+        <SD GID="Class"/>
+        <SD GID="Name"/>
+        <SD GID="Variant"/>
+        <SD GID="Revision"/>
+        <SD GID="History"/>
+      </SDG>
+      <SDG GID="RBTemplate">
+        <SD GID="Type">DeliveryNote</SD>
+        <SD GID="Subtype">ModuleStd</SD>
+        <SD GID="Version">1.0.1</SD>
+      </SDG>
+      <SDG GID="FORMATTER-CTRLS">
+        <SD GID="COMPANY">bosch</SD>
+      </SDG>
+    </SDGS>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>rba_I2C</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE>
+                  <SHORT-NAME>Documentations</SHORT-NAME>
+                  <ELEMENTS>
+                        <DOCUMENTATION>
+                            <SHORT-NAME>DeliveryNote</SHORT-NAME>
+                            <LONG-NAME>
+                                <L-4 L="EN">Delivery Note</L-4>
+                            </LONG-NAME>
+                            <CATEGORY>ARREP</CATEGORY>
+                            <DOCUMENTATION-CONTENT>
+                                <CHAPTER>
+                                    <SHORT-NAME>DeliveryNoteGeneral</SHORT-NAME>
+                                    <LONG-NAME>
+                                        <L-4 L="EN">General delivery information</L-4>
+                                    </LONG-NAME>
+                                    <CATEGORY>BODY</CATEGORY>
+                                    <TABLE>
+                                        <TABLE-CAPTION>
+                                            <SHORT-NAME>DeliveryNoteGeneralInfo</SHORT-NAME>
+                                            <LONG-NAME>
+                                                <L-4 L="EN">General delivery information</L-4>
+                                            </LONG-NAME>
+                                        </TABLE-CAPTION>
+                                        <TGROUP ALIGN="LEFT" COLS="2">
+                                            <COLSPEC COLNAME="col1" COLNUM="1"/>
+                                            <COLSPEC COLNAME="col2" COLNUM="2"/>
+                                            <TBODY VALIGN="TOP">
+                                                <ROW VALIGN="TOP">
+                                                    <ENTRY COLNAME="col1" ROTATE="0" VALIGN="TOP">
+                                                        <P>
+                                                            <L-1 L="EN">
+                                                                <E TYPE="BOLDITALIC">Delivery date:</E>
+                                                            </L-1>
+                                                        </P>
+                                                    </ENTRY>
+                                                    <ENTRY COLNAME="col2" ROTATE="0" VALIGN="TOP">
+                                                        <P>
+                                                            <L-1 L="EN">2019-30-04</L-1>
+                                                        </P>
+                                                    </ENTRY>
+                                                </ROW>
+                                                <ROW VALIGN="TOP">
+                                                    <ENTRY COLNAME="col1" ROTATE="0" VALIGN="TOP">
+                                                        <P>
+                                                            <L-1 L="EN">
+                                                                <E TYPE="BOLDITALIC">Abstract of changes:</E>
+                                                            </L-1>
+                                                        </P>
+                                                    </ENTRY>
+                                                    <ENTRY COLNAME="col2" ROTATE="0" VALIGN="TOP">
+                                                        <P><L-1 L="EN">RQONE01674143 - Enhanced callback notification support.</L-1></P>
+                                                    </ENTRY>
+                                                </ROW>
+                                                <ROW VALIGN="TOP">
+                                                    <ENTRY COLNAME="col1" ROTATE="0" VALIGN="TOP">
+                                                        <P>
+                                                            <L-1 L="EN">
+                                                                <E TYPE="BOLDITALIC">Restrictions:</E>
+                                                            </L-1>
+                                                        </P>
+                                                    </ENTRY>
+                                                    <ENTRY COLNAME="col2" ROTATE="0" VALIGN="TOP">
+                                                        <P>
+                                                            <L-1 L="EN">
+                                                                <?xm-replace_text {Optionally provide restrictions or limitations present in this delivery. One paragraph of information is sufficient here, more than two paragraphs is too much. Don't use special formatting such as e.g. bullet lists, only simple text paragraph(s). Leave this field untouched/empty if no restrictions or limitations apply.}?>
+                                                            </L-1>
+                                                        </P>
+                                                    </ENTRY>
+                                                </ROW>
+                                                <ROW VALIGN="TOP">
+                                                    <ENTRY COLNAME="col1" ROTATE="0" VALIGN="TOP">
+                                                        <P>
+                                                            <L-1 L="EN">
+                                                                <E TYPE="BOLDITALIC">Supported devices:</E>
+                                                            </L-1>
+                                                        </P>
+                                                    </ENTRY>
+                                                    <ENTRY COLNAME="col2" ROTATE="0" VALIGN="TOP">
+                                                        <P>
+                                                            <L-1 L="EN">See Mcal delivery note</L-1>
+                                                        </P>
+                                                    </ENTRY>
+                                                </ROW>
+                                                <ROW VALIGN="TOP">
+                                                    <ENTRY COLNAME="col1" ROTATE="0" VALIGN="TOP">
+                                                        <P>
+                                                            <L-1 L="EN">
+                                                                <E TYPE="BOLDITALIC">Process baseline:</E>
+                                                            </L-1>
+                                                        </P>
+                                                    </ENTRY>
+                                                    <ENTRY COLNAME="col2" ROTATE="0" VALIGN="TOP">
+                                                        <P>
+                                                            <L-1 L="EN">DGS-EC Process Library V4.10.1</L-1>
+                                                        </P>
+                                                    </ENTRY>
+                                                </ROW>
+                                                <ROW VALIGN="TOP">
+                                                    <ENTRY COLNAME="col1" ROTATE="0" VALIGN="TOP">
+                                                        <P>
+                                                            <L-1 L="EN">
+                                                                <E TYPE="BOLDITALIC">Developer:</E>
+                                                            </L-1>
+                                                        </P>
+                                                    </ENTRY>
+                                                    <ENTRY COLNAME="col2" ROTATE="0" VALIGN="TOP">
+                                                        <P>
+                                                            <L-1 L="EN">Mohaseena A (RBEI/EBB6)</L-1>
+                                                        </P>
+                                                    </ENTRY>
+                                                </ROW>
+                                                <ROW VALIGN="TOP">
+                                                    <ENTRY COLNAME="col1" ROTATE="0" VALIGN="TOP">
+                                                        <P>
+                                                            <L-1 L="EN">
+                                                                <E TYPE="BOLDITALIC">Requirements to:</E>
+                                                            </L-1>
+                                                        </P>
+                                                    </ENTRY>
+                                                    <ENTRY COLNAME="col2" ROTATE="0" VALIGN="TOP">
+                                                        <P>
+                                                            <L-1 L="EN">Thillai Maharajan M (RBEI/EBB)</L-1>
+                                                        </P>
+                                                    </ENTRY>
+                                                </ROW>
+                                            </TBODY>
+                                        </TGROUP>
+                                    </TABLE>
+                                </CHAPTER>
+                                <CHAPTER>
+                                    <SHORT-NAME>DeliveryNoteChanges</SHORT-NAME>
+                                    <LONG-NAME>
+                                        <L-4 L="EN">Changes<?xm-replace_text {Conditionally mandatory for FCs!}?></L-4>
+                                    </LONG-NAME>
+                                    <TABLE>
+                                        <TABLE-CAPTION>
+                                            <SHORT-NAME>DeliveryNoteChangesTable</SHORT-NAME>
+                                            <LONG-NAME>
+                                                <L-4 L="EN">
+                                                    <?xm-replace_text {L-4 EN}?>
+                                                </L-4>
+                                            </LONG-NAME>
+                                        </TABLE-CAPTION>
+                                        <TGROUP COLS="2">
+                                            <COLSPEC COLNAME="col1" COLNUM="1"/>
+                                            <COLSPEC COLNAME="col2" COLNUM="2"/>
+                                            <THEAD>
+                                                <ROW>
+                                                    <ENTRY COLNAME="col1">
+                                                        <P>
+                                                            <L-1 L="EN">Id</L-1>
+                                                        </P>
+                                                    </ENTRY>
+                                                    <ENTRY COLNAME="col2">
+                                                        <P>
+                                                            <L-1 L="EN">Headline</L-1>
+                                                        </P>
+                                                    </ENTRY>
+                                                </ROW>
+                                            </THEAD>
+                                            <TBODY>                                             
+                                                <ROW>
+                                                    <ENTRY COLNAME="col1">
+                                                        <P>
+                                                            <L-1 L="EN">RQONE01674143 </L-1>
+                                                        </P>
+                                                    </ENTRY>
+                                                    <ENTRY COLNAME="col2">
+                                                        <P>
+                                                            <L-1 L="EN">Enhanced callback notification support.</L-1>
+                                                        </P>
+                                                    </ENTRY>
+                                                </ROW>
+                                            </TBODY>
+                                        </TGROUP>
+                                    </TABLE>
+                                </CHAPTER>
+                                <CHAPTER>
+                                    <SHORT-NAME>DeliveryNoteDeprecated</SHORT-NAME>
+                                    <LONG-NAME>
+                                        <L-4 L="EN">Deprecated functionality<?xm-replace_text {Conditionally mandatory for COMPs!}?></L-4>
+                                    </LONG-NAME>
+                                    <LIST TYPE="UNNUMBER">
+                                        <ITEM>
+                                            <P>
+                                                <L-1 L="EN">
+                                                    <?xm-replace_text {Enter one list item per deprecated functionality, e.g. "The Hugo_DoSomething function is deprecated and will be removed in one of the next deliveries.". Don't add pseudo items containing e.g. the text "None".}?>
+                                                </L-1>
+                                            </P>
+                                        </ITEM>
+                                    </LIST>
+                                    <CHAPTER>
+                                        <SHORT-NAME>DeliveryNoteUpdateTools</SHORT-NAME>
+                                        <LONG-NAME>
+                                            <L-4 L="EN">Necessary tool versions</L-4>
+                                        </LONG-NAME>
+                                        <LIST TYPE="UNNUMBER">
+                                            <ITEM>
+                                                <P>
+                                                    <L-1 L="EN">AEEE-Pro 2018.2.0</L-1>
+                                                </P>
+                                            </ITEM>
+                                        </LIST>
+                                    </CHAPTER>
+                                </CHAPTER>
+                                <CHAPTER>
+                                    <SHORT-NAME>DeliveryNoteAdditional</SHORT-NAME>
+                                    <LONG-NAME>
+                                        <L-4 L="EN">Additional hints<?xm-replace_text {Conditionally mandatory for COMPs!}?></L-4>
+                                    </LONG-NAME>
+                                    <LIST TYPE="UNNUMBER">
+                                        <ITEM>
+                                            <P>
+                                                <L-1 L="EN">
+                                                    <?xm-replace_text {Enter one list item per other hints, like feedback or reported difficulties from Pre-Integration, debug features activation/deactivation, best practices, default configuration. Don't add pseudo items containing e.g. the text "None".}?>
+                                                </L-1>
+                                            </P>
+                                        </ITEM>
+                                    </LIST>
+                                </CHAPTER>
+                            </DOCUMENTATION-CONTENT>
+                        </DOCUMENTATION>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+</AUTOSAR>

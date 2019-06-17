@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>10.0</version>
+	<lang>*</lang>
+	<BuildNo>9831403</BuildNo>
+	
+	<RHAPSODY-MODEL>
+	<CGEMdiWorkspace type="e">
+			<stubList type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					<value>GUID 8933c50e-92db-4c03-b5c8-2fa194f54d9e</value>
+				</IRPYRawContainer>
+			</stubList>
+			<isLoadOnDemand type="a">0</isLoadOnDemand>
+			<myViewsWithID type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">2</size>
+					<CGEMdiDiagramParams type="e">
+						<_placement type="p">
+							<CCommon_WINDOWPLACEMENT type="e">
+								<m_nLength type="a">44</m_nLength>
+								<m_nFlags type="a">2</m_nFlags>
+								<m_showCmd type="a">3</m_showCmd>
+								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
+								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
+								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
+								<m_ptMaxPositionY type="a">-31</m_ptMaxPositionY>
+								<m_nLeft type="a">52</m_nLeft>
+								<m_nTop type="a">52</m_nTop>
+								<m_nRight type="a">875</m_nRight>
+								<m_nBottom type="a">628</m_nBottom>
+							</CCommon_WINDOWPLACEMENT>
+						</_placement>
+						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
+						<_theDiagram type="r">
+							<IHandle type="e">
+								<_hm2Class type="a">IActivityDiagram</_hm2Class>
+								<_hfilename type="a">.\rba_Dma_dSD_rpy\rba_Dma.sbsx</_hfilename>
+								<_hsubsystem type="a">rba_Dma</_hsubsystem>
+								<_hclass type="a">TopLevel.rba_Dma</_hclass>
+								<_hname type="a">rba_Dma_MoInitCheck()</_hname>
+								<_hid type="a">GUID e4823cbf-7c14-474e-98bd-c8de6d79ac08</_hid>
+							</IHandle>
+						</_theDiagram>
+						<_UpLeft type="a">0 0 </_UpLeft>
+						<_DownRight type="a">1999 1545 </_DownRight>
+						<m_nDiagramIndex type="a">1</m_nDiagramIndex>
+						<m_bIsActiveView type="a">1</m_bIsActiveView>
+					</CGEMdiDiagramParams>
+					
+					<CGEMdiDiagramParams type="e">
+						<_placement type="p">
+							<CCommon_WINDOWPLACEMENT type="e">
+								<m_nLength type="a">44</m_nLength>
+								<m_nFlags type="a">0</m_nFlags>
+								<m_showCmd type="a">1</m_showCmd>
+								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
+								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
+								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
+								<m_ptMaxPositionY type="a">-30</m_ptMaxPositionY>
+								<m_nLeft type="a">50</m_nLeft>
+								<m_nTop type="a">50</m_nTop>
+								<m_nRight type="a">717</m_nRight>
+								<m_nBottom type="a">708</m_nBottom>
+							</CCommon_WINDOWPLACEMENT>
+						</_placement>
+						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
+						<_theDiagram type="r">
+							<IHandle type="e">
+								<_hm2Class type="a">IDiagram</_hm2Class>
+								<_hfilename type="a">.\rba_Dma_dSD_rpy\rba_Dma.sbsx</_hfilename>
+								<_hsubsystem type="a">rba_Dma</_hsubsystem>
+								<_hname type="a">rba_Dma_OverviewDiagram</_hname>
+								<_hid type="a">GUID 743c8667-611b-48c7-a61e-c03c8572710d</_hid>
+							</IHandle>
+						</_theDiagram>
+						<_UpLeft type="a">0 0 </_UpLeft>
+						<_DownRight type="a">8077 7667 </_DownRight>
+						<m_nDiagramIndex type="a">2</m_nDiagramIndex>
+						<m_bIsActiveView type="a">0</m_bIsActiveView>
+					</CGEMdiDiagramParams>
+					
+				</IRPYRawContainer>
+			</myViewsWithID>
+			<_fullName type="a">D:\PPST_new_re\Mx18_Make\Mcal\rba_Dma\rba_Dma\doc\rba_Dma_dSD\rba_Dma_dSD</_fullName>
+			<m_SearchScopeList type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">0</size>
+				</IRPYRawContainer>
+			</m_SearchScopeList>
+			<bUsingBrowserCustomView type="a">1</bUsingBrowserCustomView>
+			<bApplyOnDiagrams type="a">0</bApplyOnDiagrams>
+			<liCustomViewIDs type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">0</size>
+				</IRPYRawContainer>
+			</liCustomViewIDs>
+			<mapOslcRmCollections type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">0</size>
+				</IRPYRawContainer>
+			</mapOslcRmCollections>
+			<favoritesItem type="e">
+				<generation type="a">0</generation>
+				<name type="a">Favorites</name>
+				<idOrFolder type="a">folder</idOrFolder>
+			</favoritesItem>
+			
+		</CGEMdiWorkspace>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+			<size type="a">0</size>
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+

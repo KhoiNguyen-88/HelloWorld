@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-0-3.xsd">
+  <!--File is edited by LEA [30-01-2019, 12:31:13]--><ADMIN-DATA>
+    <LANGUAGE>EN</LANGUAGE>
+    <USED-LANGUAGES>
+            <L-10 L="EN" xml:space="default">EN</L-10>
+        </USED-LANGUAGES>
+    <SDGS>
+      <SDG GID="BASDKey">
+        <SD GID="Domain"/>
+        <SD GID="Namespace"/>
+        <SD GID="Class"/>
+        <SD GID="Name"/>
+        <SD GID="Variant"/>
+        <SD GID="Revision"/>
+        <SD GID="History"/>
+      </SDG>
+      <SDG GID="RBTemplate">
+        <SD GID="Type">DeliveryNote</SD>
+        <SD GID="Subtype">ModuleRb</SD>
+        <SD GID="Version">1.0.1</SD>
+      </SDG>
+      <SDG GID="FORMATTER-CTRLS">
+        <SD GID="COMPANY">bosch</SD>
+      </SDG>
+    </SDGS>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>RB</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>RBA</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>rba_Dma</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE>
+                  <SHORT-NAME>Documentations</SHORT-NAME>
+                  <ELEMENTS>
+                                        <DOCUMENTATION>
+                                            <SHORT-NAME>DeliveryNote</SHORT-NAME>
+                                            <LONG-NAME>
+                                                <L-4 L="EN">Delivery Note</L-4>
+                                            </LONG-NAME>
+                                            <CATEGORY>ARREP</CATEGORY>
+                                            <DOCUMENTATION-CONTENT>
+                                                <CHAPTER>
+                                                    <SHORT-NAME>DeliveryNoteGeneral</SHORT-NAME>
+                                                    <LONG-NAME>
+                                                        <L-4 L="EN">General delivery information</L-4>
+                                                    </LONG-NAME>
+                                                    <CATEGORY>BODY</CATEGORY>
+                                                    <TABLE>
+                                                        <TABLE-CAPTION>
+                                                            <SHORT-NAME>DeliveryNoteGeneralInfo</SHORT-NAME>
+                                                            <LONG-NAME>
+                                                                <L-4 L="EN">General delivery information</L-4>
+                                                            </LONG-NAME>
+                                                        </TABLE-CAPTION>
+                                                        <TGROUP COLS="2">
+                                                            <COLSPEC COLNAME="col1" COLNUM="1"/>
+                                                            <COLSPEC COLNAME="col2" COLNUM="2"/>
+                                                            <TBODY VALIGN="TOP">
+                                                                <ROW VALIGN="TOP">
+                                                                    <ENTRY COLNAME="col1" ROTATE="0" VALIGN="TOP">
+                                                                        <P>
+                                                                            <L-1 L="EN">
+                                                                                <E TYPE="BOLDITALIC">Delivery date:</E>
+                                                                            </L-1>
+                                                                        </P>
+                                                                    </ENTRY>
+                                                                    <ENTRY COLNAME="col2" ROTATE="0" VALIGN="TOP">
+                                                                        <P>
+                                                                            <L-1 L="EN">2019-01-31</L-1>
+                                                                        </P>
+                                                                    </ENTRY>
+                                                                </ROW>
+                                                                <ROW VALIGN="TOP">
+                                                                    <ENTRY COLNAME="col1" ROTATE="0" VALIGN="TOP">
+                                                                        <P>
+                                                                            <L-1 L="EN">
+                                                                                <E TYPE="BOLDITALIC">Abstract of changes:</E>
+                                                                            </L-1>
+                                                                        </P>
+                                                                    </ENTRY>
+                                                                    <ENTRY COLNAME="col2" ROTATE="0" VALIGN="TOP">
+                                                                        <P>
+                                                                            <L-1 L="EN">RQONE01417460 - Support for Ifx_Dev3_40nm Device</L-1>
+                                                                        </P>
+                                                                        <P>
+                                                                            <L-1 L="EN">RQONE01296572 - MoInitCheck implementation for rba_Dma</L-1>
+                                                                        </P>
+                                                                    </ENTRY>
+                                                                </ROW>
+                                                                <ROW VALIGN="TOP">
+                                                                    <ENTRY COLNAME="col1" ROTATE="0" VALIGN="TOP">
+                                                                        <P>
+                                                                            <L-1 L="EN">
+                                                                                <E TYPE="BOLDITALIC">Restrictions:</E>
+                                                                            </L-1>
+                                                                        </P>
+                                                                    </ENTRY>
+                                                                    <ENTRY COLNAME="col2" ROTATE="0" VALIGN="TOP">
+                                                                        <P>
+                                                                            <L-1 L="EN">JDP: It is possible to configure two DMA channels to the same request source, however this is not allowed according to JDP specification. In cases this is needed use the interface rba_Dma_SwtMux() to activate only one connection at once, disable all not needed connections. When switching, first diable the active connection, than enable another one.</L-1>
+                                                                        </P>
+                                                                    </ENTRY>
+                                                                </ROW>
+                                                                <ROW VALIGN="TOP">
+                                                                    <ENTRY COLNAME="col1" ROTATE="0" VALIGN="TOP">
+                                                                        <P>
+                                                                            <L-1 L="EN">
+                                                                                <E TYPE="BOLDITALIC">Supported devices:</E>
+                                                                            </L-1>
+                                                                        </P>
+                                                                    </ENTRY>
+                                                                    <ENTRY COLNAME="col2" ROTATE="0" VALIGN="TOP">
+                                                                        <P>
+                                                                            <L-1 L="EN">see MCAL delivery note for details</L-1>
+                                                                        </P>
+                                                                    </ENTRY>
+                                                                </ROW>
+                                                                <ROW VALIGN="TOP">
+                                                                    <ENTRY COLNAME="col1" ROTATE="0" VALIGN="TOP">
+                                                                        <P>
+                                                                            <L-1 L="EN">
+                                                                                <E TYPE="BOLDITALIC">Developer:</E>
+                                                                            </L-1>
+                                                                        </P>
+                                                                    </ENTRY>
+                                                                    <ENTRY COLNAME="col2" ROTATE="0" VALIGN="TOP">
+                                                                        <P>
+                                                                            <L-1 L="EN">Amuthavalli Rangasamy(RBEI/EBB6)</L-1>
+                                                                        </P>
+                                                                    </ENTRY>
+                                                                </ROW>
+                                                                <ROW VALIGN="TOP">
+                                                                    <ENTRY COLNAME="col1" ROTATE="0" VALIGN="TOP">
+                                                                        <P>
+                                                                            <L-1 L="EN">
+                                                                                <E TYPE="BOLDITALIC">Requirements to:</E>
+                                                                            </L-1>
+                                                                        </P>
+                                                                    </ENTRY>
+                                                                    <ENTRY COLNAME="col2" ROTATE="0" VALIGN="TOP">
+                                                                        <P>
+                                                                            <L-1 L="EN">Thillai Maharajan M (RBEI/EBB6)</L-1>
+                                                                        </P>
+                                                                    </ENTRY>
+                                                                </ROW>
+                                                            </TBODY>
+                                                        </TGROUP>
+                                                    </TABLE>
+                                                </CHAPTER>
+                                                <CHAPTER>
+                                                    <SHORT-NAME>DeliveryNoteChanges</SHORT-NAME>
+                                                    <LONG-NAME>
+                                                        <L-4 L="EN">Changes<?xm-replace_text {Conditionally mandatory for FCs!}?></L-4>
+                                                    </LONG-NAME>
+                                                    <TABLE>
+                                                        <TABLE-CAPTION>
+                                                            <SHORT-NAME>DeliveryNoteChangesTable</SHORT-NAME>
+                                                            <LONG-NAME>
+                                                                <L-4 L="EN">
+                                                                    <?xm-replace_text {L-4 EN}?>
+                                                                </L-4>
+                                                            </LONG-NAME>
+                                                        </TABLE-CAPTION>
+                                                        <TGROUP COLS="2">
+                                                            <COLSPEC COLNAME="col1" COLNUM="1"/>
+                                                            <COLSPEC COLNAME="col2" COLNUM="2"/>
+                                                            <THEAD>
+                                                                <ROW>
+                                                                    <ENTRY COLNAME="col1">
+                                                                        <P>
+                                                                            <L-1 L="EN">Id</L-1>
+                                                                        </P>
+                                                                    </ENTRY>
+                                                                    <ENTRY COLNAME="col2">
+                                                                        <P>
+                                                                            <L-1 L="EN">Headline</L-1>
+                                                                        </P>
+                                                                    </ENTRY>
+                                                                </ROW>
+                                                            </THEAD>
+                                                            <TBODY>
+                                                                <ROW>
+                                                                    <ENTRY COLNAME="col1">
+                                                                        <P>
+                                                                            <L-1 L="EN">RQONE01417460 </L-1>
+                                                                        </P>
+                                                                    </ENTRY>
+                                                                    <ENTRY COLNAME="col2">
+                                                                        <P>
+                                                                            <L-1 L="EN">Support for Ifx_Dev3_40nm Device</L-1>
+                                                                        </P>
+                                                                    </ENTRY>
+                                                                </ROW>
+                                                                <ROW>
+                                                                    <ENTRY COLNAME="col1">
+                                                                        <P>
+                                                                            <L-1 L="EN">RQONE01296572 </L-1>
+                                                                        </P>
+                                                                    </ENTRY>
+                                                                    <ENTRY COLNAME="col2">
+                                                                        <P>
+                                                                            <L-1 L="EN"> MoInitCheck implementation for rba_Dma</L-1>
+                                                                        </P>
+                                                                    </ENTRY>
+                                                                </ROW>
+                                                            </TBODY>
+                                                        </TGROUP>
+                                                    </TABLE>
+                                                </CHAPTER>
+                                                <CHAPTER>
+                                                    <SHORT-NAME>DeliveryNoteUpdate</SHORT-NAME>
+                                                    <LONG-NAME>
+                                                        <L-4 L="EN">Update hints<?xm-replace_text {Conditionally mandatory for FCs!}?></L-4>
+                                                    </LONG-NAME>
+                                                    <P>
+                                                        <L-1 L="EN">
+                                                            <?xm-replace_text {This whole chapter is about the changes the integrator of the FC/BC has to do to use the FC/BC.}?>
+                                                        </L-1>
+                                                    </P>
+                                                    <CHAPTER>
+                                                        <SHORT-NAME>DeliveryNoteUpdateComp</SHORT-NAME>
+                                                        <LONG-NAME>
+                                                            <L-4 L="EN">Necessary component updates</L-4>
+                                                        </LONG-NAME>
+                                                        <LIST TYPE="UNNUMBER">
+                                                            <ITEM>
+                                                                <P>
+                                                                    <L-1 L="EN">
+                                                                        <?xm-replace_text {Enter one list item per necessary component update due to a version-specific dependency, e.g. "ComM ?>
+                                                                    </L-1>
+                                                                </P>
+                                                            </ITEM>
+                                                        </LIST>
+                                                    </CHAPTER>
+                                                    <CHAPTER>
+                                                        <SHORT-NAME>DeliveryNoteUpdateConf</SHORT-NAME>
+                                                        <LONG-NAME>
+                                                            <L-4 L="EN">Necessary configuration changes</L-4>
+                                                        </LONG-NAME>
+                                                        <LIST TYPE="UNNUMBER">
+                                                            <ITEM>
+                                                                <P>
+                                                                    <L-1 L="EN">
+                                                                        <?xm-replace_text {Enter one list item per necessary configuration change. Don't add pseudo items containing e.g. the text "None".}?>
+                                                                    </L-1>
+                                                                </P>
+                                                            </ITEM>
+                                                            <ITEM>
+                                                                <P>
+                                                                    <L-1 L="EN">
+                                                                        <?xm-replace_text {If this component provides configuration dependent calibration parameters please generally add the term "New calibration necessary"}?>
+                                                                    </L-1>
+                                                                </P>
+                                                            </ITEM>
+                                                        </LIST>
+                                                    </CHAPTER>
+                                                    <CHAPTER>
+                                                        <SHORT-NAME>DeliveryNoteUpdateCode</SHORT-NAME>
+                                                        <LONG-NAME>
+                                                            <L-4 L="EN">Necessary code changes</L-4>
+                                                        </LONG-NAME>
+                                                        <LIST TYPE="UNNUMBER">
+                                                            <ITEM>
+                                                                <P>
+                                                                    <L-1 L="EN">
+                                                                        <?xm-replace_text {Enter one list item per necessary code change the user hast to do to get the current version integrated and working. Don't add pseudo items containing e.g. the text "None".}?>
+                                                                    </L-1>
+                                                                </P>
+                                                            </ITEM>
+                                                        </LIST>
+                                                    </CHAPTER>
+                                                    <CHAPTER>
+                                                        <SHORT-NAME>DeliveryNoteUpdateCalib</SHORT-NAME>
+                                                        <LONG-NAME>
+                                                            <L-4 L="EN">Necessary calibration changes</L-4>
+                                                        </LONG-NAME>
+                                                        <P>
+                                                            <L-1 L="EN">
+                                                                <?xm-replace_text {Leave this field untouched/empty if no new calibration parameters have been added in this delivery or if all calibration parameter values from the predecessor delivery can be reused without change. If migration of old calibration values is possible, provide a migration rule here, e.g. "Alice_C = 2 * Bob_C". In all other cases, enter the text "New calibration necessary" (which triggers effort in calibration engineering).}?>
+                                                            </L-1>
+                                                        </P>
+                                                    </CHAPTER>
+                                                    <CHAPTER>
+                                                        <SHORT-NAME>DeliveryNoteUpdateTools</SHORT-NAME>
+                                                        <LONG-NAME>
+                                                            <L-4 L="EN">Necessary tool versions</L-4>
+                                                        </LONG-NAME>
+                                                        <LIST TYPE="UNNUMBER">
+                                                            <ITEM>
+                                                                <P>
+                                                                    <L-1 L="EN">AEEE-Pro 2018.1.2</L-1>
+                                                                </P>
+                                                            </ITEM>
+                                                            <ITEM>
+                                                                <P>
+                                                                    <L-1 L="EN">Rhapsody 8.3</L-1>
+                                                                </P>
+                                                            </ITEM>
+                                                        </LIST>
+                                                    </CHAPTER>
+                                                </CHAPTER>
+                                                <CHAPTER>
+                                                    <SHORT-NAME>DeliveryNoteDeprecated</SHORT-NAME>
+                                                    <LONG-NAME>
+                                                        <L-4 L="EN">Deprecated functionality<?xm-replace_text {Conditionally mandatory for FCs!}?></L-4>
+                                                    </LONG-NAME>
+                                                    <LIST TYPE="UNNUMBER">
+                                                        <ITEM>
+                                                            <P>
+                                                                <L-1 L="EN">The deprecated function void rba_Dma_Shutdown(void) has been disabled. It can be re-enabled by setting RBA_DMA_SHUTDOWN_API to STD_ON in the file rba_Dma_MemMap.h.</L-1>
+                                                            </P>
+                                                        </ITEM>
+                                                    </LIST>
+                                                </CHAPTER>
+                                                <CHAPTER>
+                                                    <SHORT-NAME>DeliveryNoteAdditional</SHORT-NAME>
+                                                    <LONG-NAME>
+                                                        <L-4 L="EN">Additional hints<?xm-replace_text {Conditionally mandatory for FCs!}?></L-4>
+                                                    </LONG-NAME>
+                                                    <LIST TYPE="UNNUMBER">
+                                                        <ITEM>
+                                                            <P>
+                                                                <L-1 L="EN">uint8_least rba_Dma_GetUnitNum (rba_Dma_Id_ten const idChan_cen) is deprecated and should be replaced by Std_ReturnType rba_Dma_GetUnitNr() or by rba_Dma_GetIdx().</L-1>
+                                                            </P>
+                                                        </ITEM>
+                                                        <ITEM>
+                                                            <P>
+                                                                <L-1 L="EN">uint8_least rba_Dma_GetChanNum (rba_Dma_Id_ten const idChan_cen) is deprecated and should be replaced by Std_ReturnType rba_Dma_GetChNr() or by rba_Dma_GetIdx().</L-1>
+                                                            </P>
+                                                        </ITEM>
+                                                    </LIST>
+                                                </CHAPTER>
+                                            </DOCUMENTATION-CONTENT>
+                                        </DOCUMENTATION>
+                                    </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
