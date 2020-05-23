@@ -1,7 +1,0 @@
-[common]
-item:rba_Dma/api = [true]
-item:rba_Dma/doc = [true]
-item:rba_Dma/scripts = [true]
-item:rba_Dma/src = [true]
-item:rba_Dma_AR40 = [VS_AUTOSAR_VERSION == 40]
-item:rba_Dma_AR42 = [VS_AUTOSAR_VERSION == 42]
